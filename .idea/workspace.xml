@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83aab3fc-1fb5-4a2c-8d80-51ab460f84a8" name="Default Changelist" comment="" />
+    <list default="true" id="83aab3fc-1fb5-4a2c-8d80-51ab460f84a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Supermarkt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Supermarkt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -16,6 +24,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Supermarkt@Development__Supermarkt.rcov" NAME="Development: Supermarkt Coverage Results" MODIFIED="1540850291163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Supermarkt" />
+    <SUITE FILE_PATH="coverage/supermarktror@Development__Supermarkt.rcov" NAME="Development: Supermarkt Coverage Results" MODIFIED="1541073455453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Supermarkt" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="579712497">
@@ -53,10 +62,56 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1916824801">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Gemfile" value="1" />
+          <entry key="Rakefile" value="1" />
+          <entry key="erb" value="6" />
+          <entry key="rb" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="RHTML" value="6" />
+          <entry key="Ruby" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Gemfile" value="1" />
+          <entry key="erb" value="25" />
+          <entry key="rb" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="RHTML" value="25" />
+          <entry key="Ruby" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/menu_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -65,11 +120,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/menu_controller.rb">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -78,7 +142,16 @@
         <entry file="file://$PROJECT_DIR$/app/views/menu/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/menu/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -87,7 +160,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/statistics/statistics.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -96,7 +169,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/statistics_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -113,6 +186,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>gems</find>
+      <find>rout</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Sites\Supermarkt\log</dir>
@@ -129,9 +203,11 @@
         <option value="$PROJECT_DIR$/app/views/statistics/overview.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/statistics_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/statistics/statistics.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/menu/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/menu_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -178,56 +254,43 @@
         <subPane>
           <expand>
             <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
+              <item name="supermarktror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarktror" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
+              <item name="supermarktror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarktror" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
+              <item name="supermarktror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarktror" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
+              <item name="supermarktror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarktror" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
+              <item name="supermarktror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarktror" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
+              <item name="supermarktror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarktror" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="statistics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Supermarkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Supermarkt" type="462c0819:PsiDirectoryNode" />
+              <item name="supermarktror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarktror" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -356,22 +419,24 @@
       <workItem from="1540848473218" duration="565000" />
       <workItem from="1540849093252" duration="404000" />
       <workItem from="1540849804702" duration="2961000" />
+      <workItem from="1541070715749" duration="1103000" />
+      <workItem from="1541072459966" duration="2502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3930000" />
+    <option name="totallyTimeSpent" value="7535000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2096577" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2053872" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29429892" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -381,6 +446,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32973805" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -394,23 +460,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/menu/index.erb" />
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.text.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="391">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/menu/index.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -421,38 +498,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/menu/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/statistics_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/statistics/statistics.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/menu_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
