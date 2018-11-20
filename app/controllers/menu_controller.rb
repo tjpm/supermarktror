@@ -3,15 +3,4 @@ class MenuController < ApplicationController
 
   end
 
-  def new
-
-  end
-
-  def create
-    render plain: params[:stuff].inspect
-  end
-
-  def show
-
-  end
 end
