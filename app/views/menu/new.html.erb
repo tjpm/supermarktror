@@ -1,5 +1,5 @@
 <h1>Add Stuff</h1>
-<%= form_for :stuff do |f| %>
+<%= form_for :stuff, url: menu_path do |f| %>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>

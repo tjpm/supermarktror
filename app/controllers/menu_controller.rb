@@ -8,7 +8,7 @@ class MenuController < ApplicationController
   end
 
   def create
-
+    render plain: params[:stuff].inspect
   end
 
   def show

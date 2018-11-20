@@ -1,0 +1,47 @@
+<h1>Produkt hinzufügen</h1>
+<%= form_for :stuff, url: products_path do |f| %>
+
+  <p>
+    <%= f.label :Artikelnummer %><br>
+    <%= f.text_field(:Artikelnummer, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Bezeichnung %><br>
+    <%= f.text_field(:Bezeichnung, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Preis %><br>
+    <%= f.text_field(:Preis, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :EK %><br>
+    <%= f.text_field(:EK, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Bestand %><br>
+    <%= f.text_field(:Bestand, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Bestellt %><br>
+    <%= f.text_field(:Bestellt, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Marke %><br>
+    <%= f.text_field(:Marke, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Lieferant %><br>
+    <%= f.text_field(:Lieferant, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.submit(:Hinzufügen, {:class => 'btn btn-primary'}) %>
+  </p>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Sortiment</h1>
+<% @products.each do |product| %>
+  <h3>Bezeichnung: <%= product.Bezeichnung %></h3>
+  <p>Artikelnummer: <%= product.Artikelnummer %></p>
+  <p>Bestand: <%= product.Bestand %></p>
+  <p>Bestellt: <%= product.Bestellt %></p>
+  <p>Preis: <%= product.Preis %></p>
+  <p>EK: <%= product.EK %></p>
+  <p>Lieferant: <%= product.Lieferant %></p>
+  <P>Marke: <%= product.Marke %></P>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Artikelnummer: 1
+  Bezeichnung: MyString
+  Preis: 1.5
+  EK: 1.5
+  Bestand: 1
+  Bestellt: 1
+  Marke: MyString
+  Lieferant: MyString
+
+two:
+  Artikelnummer: 1
+  Bezeichnung: MyString
+  Preis: 1.5
+  EK: 1.5
+  Bestand: 1
+  Bestellt: 1
+  Marke: MyString
+  Lieferant: MyString
