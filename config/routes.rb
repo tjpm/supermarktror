@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get 'new' => 'products#new', as: 'new'
   resources :menu
   resources :products
+  resources :suppliers
+  resources :orders
 end
