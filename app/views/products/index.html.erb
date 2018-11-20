@@ -1,11 +1,39 @@
 <h1>Sortiment</h1>
-<% @products.each do |product| %>
-  <h3>Bezeichnung: <%= product.Bezeichnung %></h3>
-  <p>Artikelnummer: <%= product.Artikelnummer %></p>
-  <p>Bestand: <%= product.Bestand %></p>
-  <p>Bestellt: <%= product.Bestellt %></p>
-  <p>Preis: <%= product.Preis %></p>
-  <p>EK: <%= product.EK %></p>
-  <p>Lieferant: <%= product.Lieferant %></p>
-  <P>Marke: <%= product.Marke %></P>
-<% end %>
+<div class="dl-horizontal">
+
+  <a class="btn btn-primary" <%= link_to "Neues Produkt", new_product_path %></a>
+
+
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Artikelnummer</th>
+    <th scope="col">Bezeichnung</th>
+    <th scope="col">Preis</th>
+    <th scope="col">EK</th>
+    <th scope="col">Lieferant</th>
+    <th scope="col">Marke</th>
+    <th scope="col">Bestand</th>
+    <th scope="col">Bestellt</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @products.each_with_index do |product, i| %>
+    <tr>
+      <th scope="row"><%= i + 1 %></th>
+      <td><%= product.Artikelnummer %></td>
+      <td><%= product.Bezeichnung %></td>
+      <td><%= product.Preis %> €</td>
+      <td><%= product.EK %> €</td>
+      <td><%= product.Lieferant %></td>
+      <td><%= product.Marke %></td>
+      <td><%= product.Bestand %></td>
+      <td><%= product.Bestellt %></td>
+      <td><%= link_to "Bearbeiten", edit_product_path(product), :class => 'btn btn-default' %></td>
+    </tr>
+  <% end %>
+    </tbody>
+  </table>
+</div>

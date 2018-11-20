@@ -1,8 +1,34 @@
-<h2><%= @stuff.Artikelnummer %></h2>
-<p><%= @stuff.Bezeichnung %></p>
-<p><%= @stuff.EK %></p>
-<p><%= @stuff.Preis %></p>
-<p><%= @stuff.Bestellt %></p>
-<p><%= @stuff.Bestand %></p>
-<p><%= @stuff.Lieferant %></p>
-<p><%= @stuff.Marke %></p>
+
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Artikelnummer</th>
+    <th scope="col">Bezeichnung</th>
+    <th scope="col">Preis</th>
+    <th scope="col">EK</th>
+    <th scope="col">Lieferant</th>
+    <th scope="col">Marke</th>
+    <th scope="col">Bestand</th>
+    <th scope="col">Bestellt</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @stuff.Artikelnummer %></td>
+      <td><%= @stuff.Bezeichnung %></td>
+      <td><%= @stuff.Preis %> €</td>
+      <td><%= @stuff.EK %> €</td>
+      <td><%= @stuff.Lieferant %></td>
+      <td><%= @stuff.Marke %></td>
+      <td><%= @stuff.Bestand %></td>
+      <td><%= @stuff.Bestellt %></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<%= link_to "Bearbeiten", edit_product_path(@stuff), :class => 'btn btn-default' %>
+<%= link_to "Löschen", product_path(@stuff),
+            method: :delete,
+            data: {confirm: 'Sicher?'},
+            :class => 'btn btn-danger' %>

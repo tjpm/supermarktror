@@ -1,10 +1,10 @@
-<h1>Produkt ändern</h1>
-<%= form_for :stuff, url: products_path do |f| %>
+<h1>Produkt hinzufügen</h1>
+<%= form_for :stuff, url: product_path(@stuff), method: :patch do |f| %>
   <% if @stuff.errors.any? %>
     <% @stuff.errors.full_messages.each do |msg| %>
       <div class="alert alert-danger"><%= msg %></div>
-      <% end %>
     <% end %>
+  <% end %>
   <p>
     <%= f.label :Artikelnummer %><br>
     <%= f.text_field(:Artikelnummer, {:class => 'form-control'}) %>
@@ -46,6 +46,10 @@
   </p>
 
   <p>
-    <%= f.submit(:Hinzufügen, {:class => 'btn btn-primary'}) %>
+    <%= f.submit(:Ändern, {:class => 'btn btn-primary'}) %>
   </p>
 <% end %>
+<%= link_to "Löschen", product_path(@stuff),
+            method: :delete,
+            data: {confirm: 'Sicher?'},
+            :class => 'btn btn-danger' %>
