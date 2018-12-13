@@ -42,8 +42,7 @@
 
   <p>
     <%= f.label :Lieferant %><br>
-
-    <%= f.select(:Lieferant, options_from_collection_for_select(Supplier.all, :Name, :Name), prompt: "Lieferanten") %>
+    <%= f.select(:Lieferant, options_from_collection_for_select(Supplier.all, :Name, :Name), {}, :class => 'form-control') %>
   </p>
 
   <p>
