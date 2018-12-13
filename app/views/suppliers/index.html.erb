@@ -1,1 +1,29 @@
-<h1>Hier könnte eine Auflistung von Lieferanten stehen...</h1>
+<h1>Lieferanten</h1>
+<div class="form-group">
+  <a class="btn btn-primary" <%= link_to "Neuer Lieferant", new_supplier_path %></a>
+</div>
+<table id="prducts", class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Lieferantennummer</th>
+    <th scope="col">Name</th>
+    <th scope="col">Adresse</th>
+    <th scope="col">Telefonnummer</th>
+    <th scope="col">Email</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @suppliers.each_with_index do |supplier, i| %>
+    <tr>
+      <th scope="row"><%= i + 1 %></th>
+      <td><%= supplier.Lieferantennummer %></td>
+      <td><%= supplier.Name %></td>
+      <td><%= supplier.Adresse %></td>
+      <td><%= supplier.Telefonnummer %></td>
+      <td><%= supplier.Email %></td>
+      <td><%= link_to "Bearbeiten", edit_supplier_path(supplier), :class => 'btn btn-default' %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

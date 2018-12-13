@@ -1,4 +1,4 @@
-<h1>Produkt ändern</h1>
+<h1>Produkt hinzufügen</h1>
 <%= form_for :stuff, url: products_path do |f| %>
   <% if @stuff.errors.any? %>
     <% @stuff.errors.full_messages.each do |msg| %>
@@ -42,7 +42,8 @@
 
   <p>
     <%= f.label :Lieferant %><br>
-    <%= f.text_field(:Lieferant, {:class => 'form-control'}) %>
+
+    <%= f.select(:Lieferant, options_from_collection_for_select(Supplier.all, :Name, :Name), prompt: "Lieferanten") %>
   </p>
 
   <p>

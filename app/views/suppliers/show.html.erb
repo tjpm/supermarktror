@@ -1,0 +1,30 @@
+
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">id</th>
+    <th scope="col">Lieferantennummer</th>
+    <th scope="col">Name</th>
+    <th scope="col">Adresse</th>
+    <th scope="col">Telefonnummer</th>
+    <th scope="col">Email</th>
+  </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td><%= @supplierinfo.id %></td>
+      <td><%= @supplierinfo.Lieferantennummer %></td>
+      <td><%= @supplierinfo.Name %></td>
+      <td><%= @supplierinfo.Adresse %> </td>
+      <td><%= @supplierinfo.Telefonnummer %> €</td>
+      <td><%= @supplierinfo.Email %></td>
+    </tr>
+  </tbody>
+</table>
+<%= link_to "Bearbeiten", edit_supplier_path(@supplierinfo), :class => 'btn btn-default' %>
+<%= link_to "Löschen", supplier_path(@supplierinfo),
+            method: :delete,
+            data: {confirm: 'Sicher?'},
+            :class => 'btn btn-danger' %>

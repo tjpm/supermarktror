@@ -1,15 +1,24 @@
 class ProductsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create, :update, :destroy]
   def index
-    @products = Product.all
-  end
 
+    # @products = Product.search(params[:search_product],params[:search_al])
+    @products = Product.all
+    @products = Product.search(params[:search].to_param) unless params[:search].blank?
+    # if params[:search]
+    #   @search_term = params[:search]
+    #   @products = @products.search_by(@search_term)
+    # else params[:search] ==
+    #   @products = Product.all
+    # end
+  end
   def new
     @stuff = Product.new
   end
 
   def create
     #render plain: params[:stuff].inspect
+    # @supplier = Supplier.find(params[:id])
     @stuff = Product.new(product_params)
 
     if(@stuff.save)
@@ -46,6 +55,7 @@ class ProductsController < ApplicationController
   end
 
   private def product_params
+
     params.require(:stuff).permit(:Artikelnummer, :Bezeichnung, :Preis, :EK, :Bestand, :Bestellt, :Marke, :Lieferant)
   end
 end

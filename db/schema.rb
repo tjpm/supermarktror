@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181119230612) do
+ActiveRecord::Schema.define(version: 20181212203004) do
+
+  create_table "orderpositions", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "order_id"
+    t.integer "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_orderpositions_on_order_id"
+    t.index ["product_id"], name: "index_orderpositions_on_product_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "Bestellnummer"
+    t.string "Bezeichnung"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "products", force: :cascade do |t|
     t.integer "Artikelnummer"
@@ -21,6 +38,18 @@ ActiveRecord::Schema.define(version: 20181119230612) do
     t.integer "Bestellt"
     t.string "Marke"
     t.string "Lieferant"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "supplier_id"
+    t.index ["supplier_id"], name: "index_products_on_supplier_id"
+  end
+
+  create_table "suppliers", force: :cascade do |t|
+    t.integer "Lieferantennummer"
+    t.string "Name"
+    t.string "Adresse"
+    t.integer "Telefonnummer"
+    t.string "Email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

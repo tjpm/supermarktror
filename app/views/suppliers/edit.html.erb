@@ -1,0 +1,36 @@
+<h1>Lieferant ändern</h1>
+<%= form_for :supllierinfo, url: suppliers_path do |f| %>
+  <%# if @supllierinfo.errors.any? %>
+  <%# @supllierinfo.errors.full_messages.each do |msg| %>
+  <!--      <div class="alert alert-danger"><%#= msg %></div>-->
+  <%# end %>
+  <%# end %>
+  <p>
+    <%= f.label :Lieferantennummer %><br>
+    <%= f.text_field(:Lieferantennummer, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Name %><br>
+    <%= f.text_field(:Name, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Adresse %><br>
+    <%= f.text_field(:Adresse, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Telefonnummer %><br>
+    <%= f.text_field(:Telefonnummer, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.label :Email %><br>
+    <%= f.text_field(:Email, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.submit(:Ändern, {:class => 'btn btn-primary'}) %>
+  </p>
+<% end %>

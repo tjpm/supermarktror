@@ -1,4 +1,7 @@
 <h1>Sortiment</h1>
+<%= form_for "", url:products_path , role: "search", method: :get do %>
+  <%= text_field :search, @search_term, placeholder: " Search.." %>
+  <% end %>
 <div class="form-group">
   <a class="btn btn-primary" <%= link_to "Neues Produkt", new_product_path %></a>
 </div>

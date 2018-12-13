@@ -9,7 +9,6 @@ class CreateProducts < ActiveRecord::Migration[5.1]
       t.integer :Bestellt
       t.string :Marke
       t.string :Lieferant
-
       t.timestamps
     end
   end
