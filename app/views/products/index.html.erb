@@ -1,7 +1,9 @@
 <h1>Sortiment</h1>
-<%= form_for "", url:products_path , role: "search", method: :get do %>
-  <%= text_field :search, @search_term, placeholder: " Search.." %>
+<div class="form-group">
+  <%= form_for "", url:products_path , role: "search", method: :get do %>
+    <%= text_field :search, @search_term, placeholder: " Search.." %>
   <% end %>
+</div>
 <div class="form-group">
   <a class="btn btn-primary" <%= link_to "Neues Produkt", new_product_path %></a>
 </div>
@@ -15,8 +17,8 @@
     <th scope="col">EK</th>
     <th scope="col">Lieferant</th>
     <th scope="col">Marke</th>
-    <th scope="col">Bestand</th>
-    <th scope="col">Bestellt</th>
+<!--    <th scope="col">Bestand</th>-->
+<!--    <th scope="col">Bestellt</th>-->
   </tr>
   </thead>
   <tbody>
@@ -29,8 +31,8 @@
       <td><%= product.EK %> €</td>
       <td><%= product.Lieferant %></td>
       <td><%= product.Marke %></td>
-      <td><%= product.Bestand %></td>
-      <td><%= product.Bestellt %></td>
+<!--      <td><%#= product.Bestand %></td>-->
+<!--      <td><%#= product.Bestellt %></td>-->
       <td><%= link_to "Bearbeiten", edit_product_path(product), :class => 'btn btn-default' %></td>
     </tr>
   <% end %>

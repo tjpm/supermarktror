@@ -25,15 +25,15 @@
     <%= f.text_field(:EK, {:class => 'form-control'}) %>
   </p>
 
-  <p>
-    <%= f.label :Bestand %><br>
-    <%= f.text_field(:Bestand, {:class => 'form-control'}) %>
-  </p>
+<!--  <p>-->
+<!--    <%#= f.label :Bestand %><br>-->
+    <%#= f.text_field(:Bestand, {:class => 'form-control'}) %>
+<!--  </p>-->
 
-  <p>
-    <%= f.label :Bestellt %><br>
-    <%= f.text_field(:Bestellt, {:class => 'form-control'}) %>
-  </p>
+<!--  <p>-->
+<!--    <%#= f.label :Bestellt %><br>-->
+    <%#= f.text_field(:Bestellt, {:class => 'form-control'}) %>
+<!--  </p>-->
 
   <p>
     <%= f.label :Marke %><br>
@@ -42,7 +42,7 @@
 
   <p>
     <%= f.label :Lieferant %><br>
-    <%= f.select(:Lieferant, options_from_collection_for_select(Supplier.all, :Name, :Name)) %>
+    <%= f.select(:Lieferant, options_from_collection_for_select(Supplier.all, :Name, :Name), {}, :class => 'form-control') %>
   </p>
 
   <p>

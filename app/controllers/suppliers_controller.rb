@@ -2,6 +2,7 @@ class SuppliersController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create, :update, :destroy]
   def index
     @suppliers = Supplier.all
+    @suppliers = Supplier.search(params[:search].to_param) unless params[:search].blank?
   end
 
   def new

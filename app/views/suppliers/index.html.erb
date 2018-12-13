@@ -1,5 +1,10 @@
 <h1>Lieferanten</h1>
 <div class="form-group">
+  <%= form_for "", url:suppliers_path , role: "search", method: :get do %>
+    <%= text_field :search, @search_term, placeholder: " Search.." %>
+  <% end %>
+</div>
+<div class="form-group">
   <a class="btn btn-primary" <%= link_to "Neuer Lieferant", new_supplier_path %></a>
 </div>
 <table id="prducts", class="table">
